@@ -1,14 +1,12 @@
 <!-- inject:../components/baseHead/baseHeadStart.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"><head>
 
-<head>
-
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!-- Google Tag Manager -->
-	<script>
+	<script async="" src="https://www.googletagmanager.com/gtm.js?id={{ .Site.Params.googleTagManagerID }}{{ .Site.Params.googleTagManagerID }}"></script><script>
 		(function (w, d, s, l, i) {
 			w[l] = w[l] || [];
 			w[l].push({
@@ -27,213 +25,24 @@
 	<!-- End Google Tag Manager -->
 	<!-- endinject -->
 	<title>Maggie's Portfolio Website</title>
-	<style>
-		/* Fade In animation triggering after font load or 3s timeout */
-		.rad-fade-in {
-			will-change: opacity, transform;
-			animation-name: rad-fade-in-fallback;
-			animation-duration: 5s;
-			animation-fill-mode: both;
-		}
-	
-		@keyframes rad-fade-in-fallback {
-			0% {
-				opacity: 0;
-			}
-	
-			75% {
-				opacity: 0;
-			}
-	
-			100% {
-				opacity: 1;
-			}
-		}
-	
-		.fonts-loaded .rad-fade-in.rad-waiting {
-			animation-name: none;
-			opacity: 0;
-		}
-	
-		.fonts-loaded .rad-fade-in.rad-animate {
-			animation-name: rad-fade-in;
-			animation-duration: 1.1s;
-			animation-fill-mode: both;
-		}
-	
-		@keyframes rad-fade-in {
-			0% {
-				opacity: 0;
-			}
-	
-			100% {
-				opacity: 1;
-			}
-		}
-	
-		/* Fade In Long animation triggering after font load or 3s timeout */
-		.rad-fade-in-long {
-			will-change: opacity, transform;
-			animation-name: rad-fade-in-long-fallback;
-			animation-duration: 8s;
-			animation-fill-mode: both;
-		}
-	
-		@keyframes rad-fade-in-long-fallback {
-			0% {
-				opacity: 0;
-			}
-	
-			75% {
-				opacity: 0;
-			}
-	
-			100% {
-				opacity: 1;
-			}
-		}
-	
-		.fonts-loaded .rad-fade-in-long.rad-waiting {
-			animation-name: none;
-			opacity: 0;
-		}
-	
-		.fonts-loaded .rad-fade-in-long.rad-animate {
-			animation-name: rad-fade-in-long;
-			animation-duration: 2s;
-			animation-fill-mode: both;
-		}
-	
-		@keyframes rad-fade-in-long {
-			0% {
-				opacity: 0;
-			}
-	
-			20% {
-				opacity: 0;
-			}
-	
-			100% {
-				opacity: 1;
-			}
-		}
-	
-		/* Fade Down animation triggering after font load or 3s timeout */
-		.rad-fade-down {
-			will-change: opacity, transform;
-			animation-name: rad-fade-down-fallback;
-			animation-duration: 5s;
-			animation-fill-mode: both;
-			transform: translateY(-30px);
-		}
-	
-		@keyframes rad-fade-down-fallback {
-			0% {
-				opacity: 0;
-				transform: translateY(-30px);
-			}
-	
-			75% {
-				opacity: 0;
-				transform: translateY(-30px);
-			}
-	
-			100% {
-				opacity: 1;
-				transform: translateY(0);
-			}
-		}
-	
-		.fonts-loaded .rad-fade-down.rad-waiting {
-			animation-name: none;
-			opacity: 0;
-			transform: translateY(-30px);
-		}
-	
-		.fonts-loaded .rad-fade-down.rad-animate {
-			animation-name: rad-fade-down;
-			animation-duration: 1.1s;
-		}
-	
-		@keyframes rad-fade-down {
-			0% {
-				opacity: 0;
-				transform: translateY(-30px);
-			}
-	
-			100% {
-				opacity: 1;
-				transform: translateY(0);
-			}
-		}
-	
-		/* Scale Down animation triggering after font load or 3s timeout */
-		.rad-scale-down {
-			will-change: opacity, transform;
-			animation-name: rad-scale-down-fallback;
-			animation-duration: 5s;
-			animation-fill-mode: both;
-			transform-origin: 50% 0;
-		}
-	
-		@keyframes rad-scale-down-fallback {
-			0% {
-				opacity: 0;
-				transform: scaleY(0.95);
-			}
-	
-			75% {
-				opacity: 0;
-				transform: scaleY(0.95);
-			}
-	
-			100% {
-				opacity: 1;
-				transform: scaleY(1);
-			}
-		}
-	
-		.fonts-loaded .rad-scale-down.rad-waiting {
-			animation-name: none;
-			opacity: 0;
-			transform: scaleY(0.95);
-		}
-	
-		.fonts-loaded .rad-scale-down.rad-animate {
-			animation-name: rad-scale-down;
-			animation-duration: 1.1s;
-			animation-fill-mode: both;
-		}
-	
-		@keyframes rad-scale-down {
-			0% {
-				opacity: 0;
-				transform: scaleY(0.95);
-			}
-	
-			100% {
-				opacity: 1;
-				transform: scaleY(1);
-			}
-		}
-	</style>
+
 	
 
-	<link rel="stylesheet" href="css/main.css"/>
-	<link rel="stylesheet" href="css/animation.css"/>
-	<link rel="stylesheet" href="css/custom.css"/>
-	<link rel="stylesheet" href="css/rad-icons-codes.css"/>
-	<link rel="stylesheet" href="css/rad-icons-embedded.css"/>
-	<link rel="stylesheet" href="css/rad-icons-ie7-codes.css"/>
-	<link rel="stylesheet" href="css/rad-icons-ie7.css"/>
-	<link rel="stylesheet" href="css/rad-icons.css"/>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animation.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/rad-icons-codes.css">
+	<link rel="stylesheet" href="css/rad-icons-embedded.css">
+	<link rel="stylesheet" href="css/rad-icons-ie7-codes.css">
+	<link rel="stylesheet" href="css/rad-icons-ie7.css">
+	<link rel="stylesheet" href="css/rad-icons.css">
 
 </head>
 
 <body>
 
-	<header class="header fixed-top rad-animation-group" id="header">
-		<div class="container rad-fade-in">
+	<header class="header fixed-top rad-animation-group header--sticky" id="header">
+		<div class="container rad-fade-in rad-waiting rad-animate" style="animation-delay: 0.1s;">
 		  <nav class="navbar navbar-expand-lg navbar-light p-0">
 			<a class="navbar-brand" href="{{ .Site.BaseURL | absURL }}">
 			  <span>Yuhanxiao Ma</span>
@@ -245,224 +54,226 @@
 				alt="Header Logo"
 			  /> -->
 			</a>
-			<button
-			  class="navbar-toggler"
-			  type="button"
-			  data-toggle="collapse"
-			  data-target="#navbarSupportedContent, #header"
-			  aria-controls="navbarSupportedContent"
-			  aria-expanded="false"
-			  aria-label="Toggle navigation"
-			>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent, #header" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>
 			<!--navigation bar-->
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			  <ul class="navbar-nav ml-lg-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="index.html">HOME</a>
+					<a class="nav-link" href="index.html">WORKS</a>
 				</li>
 				<li class="nav-item">
-					<a data-scroll class="nav-link" href="about.html">ABOUT</a>
+					<a data-scroll="" class="nav-link" href="about.html">ABOUT</a>
 				</li>
 				<li class="nav-item">
-					<a data-scroll class="nav-link" href="portfolio.html">PORTFOLIO</a>
+					<a data-scroll="" class="nav-link" href="news.html">NEWS</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="publication.html">PUBLICATION</a>
 				</li>
-
 			  </ul>
 			</div>
 		  </nav>
 		</div>
 	</header>
-	  
-	<!--showcase-->
-	<section class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
-		<div class="rad-showcase__bg">
-		  <img
-			class="lozad img-responsive"
-			src="img/showcase/showcase@2x.png"
-			data-src="img/showcase/showcase@2x.png"
-			data-srcset="{{ .Site.Data.homepage.showcase.image.x | absURL }} 1x, {{ .Site.Data.homepage.showcase.image._2x | absURL }} 2x"
-			alt="{{ .Site.Data.homepage.showcase.image.alt }}"
-		  />
-		</div>
-		<div class="container">
-		  <div class="row">
-			<div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
-			  <h1 class="display-1">
-				Yuhanxiao Ma
-			  </h1>
-			  <h2>
-				Research Artist
-			  </h2>
-			  <p class="lead">
-				She works with generative art, multimedia installations, 3d scanning/fabrication, and assistive edge devices. Her interdisciplinary works examine reality and truth, specifically the extraordinary of the mundane, seemingly opposing ideas and the construction of authenticity in this lie-prone, post-truth era. She also focuses on the paradoxical relationship between humans and machines (technology) and would like to use her artworks and research to investigate its socio-political implications.
-			  </p>
 
-			</div>
-		  </div>
-		  <div class="row platform-links">
-			<div class="col-12">
-				github
-			  <a href="https://github.com/Maggie-29" target="_blank"
-				><i class="icon-{{ .icon }}-line"></i
-			  ></a>
-			</div>
-		  </div>
-		</div>
-		<div class="rad-showcase__bg rad-showcase__bg--mobile">
-		  <img
-			class="lozad img-responsive"
-			src="img/showcase/showcase@2x.png"
-			data-src="img/showcase/showcase@2x.png"
-			alt="xxx"
-		  />
-		</div>
-	</section>
-
-	<!--work experience
-	<section id="experience" class="section section--border-bottom rad-animation-group">
-		<div class="container">
-			<div class="row flex-column-reverse flex-md-row rad-fade-down">
-				<div class="col-12 col-sm-6 mt-5 mt-sm-0">
-					{{ range .Site.Data.homepage.experience.items }}
-					<div class="experience">
-						<div class="experience__date">{{ .duration }}</div>
-						<div class="experience__title">{{ .title }}</div>
-						<div class="experience__company">{{ .company }}</div>
-					</div>
-
+	<!--porfolio-->
+	<section id="portfolio" class="section">
+		<div class="container" style="margin-top: 10px; margin-bottom:10px;">
+			<h3 class="rad-animation-group rad-fade-down rad-waiting rad-animate" style="animation-delay: 0.1s;">
+			  Objects
+			</h3>
+  
+			<div class="row rad-animation-group rad-fade-down rad-waiting rad-animate" style="animation-delay: 0.1s;">
+			  <div class="col-12 col-md-3 mt-4 mt-md-0 my-md-auto">
+				<a href="pills.html">
+				<img class="lozad img-responsive {{ cond (eq ( mod $index 4) 0) &quot;img-clip-left-backward&quot; &quot;img-clip-left-forward&quot; }}" src="img/coverphoto/thepills.jpg" data-src="img/coverphoto/thepills.jpg" data-srcset="img/coverphoto/thepills.jpg" alt="Pills That Look Like Pills" srcset="img/coverphoto/thepills.jpg" data-loaded="true">
+				<h5>The Pills that Look Like Pills</h5>
+				</a>
+			  </div>
+  
+			  <div class="col-12 col-md-3 mt-4 mt-md-0 my-md-auto">
+				  <a href="marinaandulay.html">
+				  <img class="lozad img-responsive {{ cond (eq ( mod $index 4) 1)  &quot;img-clip-right-backward&quot; &quot;img-clip-right-forward&quot; }}" src="img/coverphoto/MarinaAndUlay.jpg" data-src="img/coverphoto/MarinaAndUlay.jpg" data-srcset="img/coverphoto/MarinaAndUlay.jpg" alt="Marina And Ulay" srcset="img/coverphoto/MarinaAndUlay.jpg" data-loaded="true">
+					<h5>Marina And Ulay</h5>
+			  </a>
+			  </div>
+  
+  
+			  <div class="col-12 col-md-3 mt-4 mt-md-0 my-md-auto">
+				  <a href="feedingwatch.html">
+				  <img class="lozad img-responsive {{ cond (eq ( mod $index 4) 1)  &quot;img-clip-right-backward&quot; &quot;img-clip-right-forward&quot; }}" src="img/coverphoto/FeedingWatch.jpg" data-src="img/coverphoto/FeedingWatch.jpg" data-srcset="img/coverphoto/FeedingWatch.jpg" alt="Feeding Watch" srcset="img/coverphoto/FeedingWatch.jpg" data-loaded="true">
+				<h5>Feeding Watch</h5>
+				</a>
 				</div>
-				<div class="col-12 col-sm-6">
-					<h2>{{ .Site.Data.homepage.experience.title }}</h2>
-					<p class="lead">
-						{{ .Site.Data.homepage.experience.description }}
-					</p>
-					<a href="{{ .Site.Data.homepage.experience.button.URL | absURL }}" class="btn btn-primary"
-					target="_blank">
-						<i class="{{ .Site.Data.homepage.experience.button.icon }}"></i>
-						{{ .Site.Data.homepage.experience.button.btnText }}
-						<i class="icon-arrow-right"></i></a>
-					<a href="{{ .Site.Data.homepage.experience.button2.URL | absURL }}" class="btn btn-frameless"
-					target="_blank">
-						<i class="{{ .Site.Data.homepage.experience.button2.icon }}"></i>
-						{{ .Site.Data.homepage.experience.button2.btnText }}
+
+				<div class="col-12 col-md-3 mt-4 mt-md-0 my-md-auto">
+					<a href="aclockinprogress.html">
+					<img class="lozad img-responsive {{ cond (eq ( mod $index 4) 0) &quot;img-clip-left-backward&quot; &quot;img-clip-left-forward&quot; }}" src="img/coverphoto/AClockinProgress.jpg" data-src="img/coverphoto/AClockinProgress.jpg" data-srcset="img/coverphoto/AClockinProgress.jpg" alt="AClockinProgress" srcset="img/coverphoto/AClockinProgress.jpg" data-loaded="true">
+					<h5>A Clock in Progress</h5>
 					</a>
 				</div>
 			</div>
 		</div>
 	</section>
-	-->
 
-	<!--porfolio-->
-	<section id="portfolio" class="section section--border-bottom">
-		<div class="container">
-		  <h2 class=" rad-animation-group rad-fade-down">
-			Artworks
-		  </h2>
 
-		  <div
-			class="row row--padded rad-animation-group rad-fade-down {{ if .is_even }}flex-column-reverse flex-md-row{{ end }}"
-		  >
-			<!-- if .is_even -->
-			<div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
-			  <h3>Now You See</h3>
-			  <p class="lead">
-				A make believe exhibit based on Italo Calvino's Invisible Cities.
-			  </p>
-			  <a href="nowyousee.html" class="btn btn-primary"
-				>Project Details<i class="{{ .button.icon }}"></i
-			  ></a>
-			</div>
-			<div class="col-12 col-md-7 pl-md-0 text-right">
-			  <img
-				class="img-clip-left-forward"
-				src="img/coverphoto/NowYouSee.jpg"
-				data-src="img/coverphoto/NowYouSee.jpg"
-				data-srcset="img/coverphoto/NowYouSee.jpg"
-				alt="Now You See"
-			  />
-			</div>
-			<!-- else -->
-			<div class="col-12 col-md-7 pl-md-0 text-right">
-			  <img
-				class="img-clip-right-backward"
-				src="img/coverphoto/BeatingHeart.jpg"
-				data-src="img/coverphoto/BeatingHeart.jpg"
-				data-srcset="img/coverphoto/BeatingHeart.jpg"
-				alt="Beating Heart"
-			  />
-			</div>
-			<div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
-			  <h3>Beating Heart</h3>
-			  <p class="lead">
-				Installation
-			  </p>
-			  <a href="{{ .button.URL | absURL }}" class="btn btn-primary"
-				>Project Details<i class="{{ .button.icon }}"></i
-			  ></a>
+	<section id="portfolio" class="section">
+		<div class="container" style="margin-top: 10px; margin-bottom:10px;">
+		  <h3 class="rad-animation-group rad-fade-down rad-waiting rad-animate" style="animation-delay: 0.1s;">
+			Installations
+		  </h3>
+
+		  
+
+		  <div class="row rad-animation-group rad-fade-down rad-waiting rad-animate" style="animation-delay: 0.1s;">
+		  <div class="col-12 col-md-3 mt-4 mt-md-0 my-md-auto">
+			<a href="intheeyesofmachines.html">
+			<img class="lozad img-responsive {{ cond (eq ( mod $index 4) 1)  &quot;img-clip-right-backward&quot; &quot;img-clip-right-forward&quot; }}" src="img/coverphoto/InTheEyesofMachines.jpg" data-src="img/coverphoto/InTheEyesofMachines.jpg" data-srcset="img/coverphoto/InTheEyesofMachines.jpg" alt="In The Eyes of Machines" srcset="img/coverphoto/InTheEyesofMachines.jpg" data-loaded="true">
+			<h5>In The Eyes of Machines</h5>
+			</a>
+		</div>
+
+		<div class="col-12 col-md-3 mt-4 mt-md-0 my-md-auto">
+			<a href="beatingheart.html">
+			<img class="lozad img-responsive {{ cond (eq ( mod $index 4) 1)  &quot;img-clip-right-backward&quot; &quot;img-clip-right-forward&quot; }}" src="img/coverphoto/BeatingHeart.jpg" data-src="img/coverphoto/BeatingHeart.jpg" data-srcset="img/coverphoto/BeatingHeart.jpg" alt="Beating Heart" srcset="img/coverphoto/BeatingHeart.jpg" data-loaded="true">
+			  <h5>Beating Heart</h5>
+			</a>
+		</div>
+
+			<div class="col-12 col-md-3 mt-4 mt-md-0 my-md-auto">
+			  <a href="nowyousee.html">
+			  <img class="lozad img-responsive {{ cond (eq ( mod $index 4) 0) &quot;img-clip-left-backward&quot; &quot;img-clip-left-forward&quot; }}" src="img/coverphoto/NowYouSee.jpg" data-src="img/coverphoto/NowYouSee.jpg" data-srcset="img/coverphoto/NowYouSee.jpg" alt="Now You See" srcset="img/coverphoto/NowYouSee.jpg" data-loaded="true">
+			  <h5>Now You See</h5>
+			  </a>
 			</div>
 
-			<div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
-				<h3>EREMA</h3>
-				<p class="lead">
-				  A make believe exhibit based on Italo Calvino's Invisible Cities.
-				</p>
-				<a href="{{ .button.URL | absURL }}" class="btn btn-primary"
-				  >Project Details<i class="{{ .button.icon }}"></i
-				></a>
-			  </div>
-			  <div class="col-12 col-md-7 pl-md-0 text-right">
-				<img
-				  class="img-clip-left-forward"
-				  src="img/coverphoto/EREMA.jpg"
-				  data-src="img/coverphoto/EREMA.jpg"
-				  data-srcset="img/coverphoto/EREMA.jpg"
-				  alt="EREMA"
-				/>
-			  </div>
-			  <!-- else -->
-			  <div class="col-12 col-md-7 pl-md-0 text-right">
-				<img
-				  class="img-clip-right-backward"
-				  src="img/coverphoto/FeedingWatch.jpg"
-				  data-src="img/coverphoto/FeedingWatch.jpg"
-				  data-srcset="img/coverphoto/FeedingWatch.jpg"
-				  alt="Feeding Watch"
-				/>
-			  </div>
-			  <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
-				<h3>Feeding Watch</h3>
-				<p class="lead">
-				  Installation
-				</p>
-				<a href="{{ .button.URL | absURL }}" class="btn btn-primary"
-				  >Project Details<i class="{{ .button.icon }}"></i
-				></a>
-			  </div>
+			
+			<div class="col-12 col-md-3 mt-4 mt-md-0 my-md-auto">
+				<a href="EREMA.html">
+				<img class="lozad img-responsive {{ cond (eq ( mod $index 4) 0) &quot;img-clip-left-backward&quot; &quot;img-clip-left-forward&quot; }}" src="img/coverphoto/EREMA.jpg" data-src="img/coverphoto/EREMA.jpg" data-srcset="img/coverphoto/EREMA.jpg" alt="EREMA" srcset="img/coverphoto/EREMA.jpg" data-loaded="true">
+				<h5>EREMA</h5>
+				</a>
+			</div>
 
-			  <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
-				<h3>Readable Project</h3>
-				<p class="lead">
-				  A make believe exhibit based on Italo Calvino's Invisible Cities.
-				</p>
-				<a href="{{ .button.URL | absURL }}" class="btn btn-primary"
-				  >Project Details<i class="{{ .button.icon }}"></i
-				></a>
-			  </div>
-			  <div class="col-12 col-md-7 pl-md-0 text-right">
-				<img
-				  class='lozad img-responsive {{ cond (eq ( mod $index 4) 0) "img-clip-left-backward" "img-clip-left-forward" }}'
-				  src="img/coverphoto/ReadableProject.jpg"
-				  data-src="img/coverphoto/ReadableProject.jpg"
-				  data-srcset="img/coverphoto/ReadableProject.jpg"
-				  alt="Readable Project"
-				/>
-			  </div>
+			<div class="col-12 col-md-3 mt-4 mt-md-0 my-md-auto">
+				<a href="infusiontime.html">
+				<img class="lozad img-responsive {{ cond (eq ( mod $index 4) 1)  &quot;img-clip-right-backward&quot; &quot;img-clip-right-forward&quot; }}" src="img/coverphoto/InfusionTime.jpg" data-src="img/coverphoto/InfusionTime.jpg" data-srcset="img/coverphoto/InfusionTime.jpg" alt="INfusion Time" srcset="img/coverphoto/InfusionTime.jpg" data-loaded="true">
+				  <h5>Infusion Time</h5>
+				</a>
+			</div>
+
+			<div class="col-12 col-md-3 mt-4 mt-md-0 my-md-auto">
+				<a href="readableproject.html">
+				<img class="lozad img-responsive {{ cond (eq ( mod $index 4) 1)  &quot;img-clip-right-backward&quot; &quot;img-clip-right-forward&quot; }}" src="img/coverphoto/ReadableProject.jpg" data-src="img/coverphoto/ReadableProject.jpg" data-srcset="img/coverphoto/ReadableProject.jpg" alt="Readable Project" srcset="img/coverphoto/ReadableProject.jpg" data-loaded="true">
+				  <h5>Readable Project</h5>
+				</a>
+			</div>
+
+			<div class="col-12 col-md-3 mt-4 mt-md-0 my-md-auto">
+				<a href="colorspace.html">
+				<img class="lozad img-responsive {{ cond (eq ( mod $index 4) 1)  &quot;img-clip-right-backward&quot; &quot;img-clip-right-forward&quot; }}" src="img/coverphoto/ColorSpace.jpg" data-src="img/coverphoto/ColorSpace.jpg" data-srcset="img/coverphoto/ColorSpace.jpg" alt="Color Space" srcset="img/coverphoto/ColorSpace.jpg" data-loaded="true">
+				  <h5>Color Space</h5>
+				</a>
+			</div>
+
+			
+
+
 		  </div>
+		</div>
+	</section>
+
+	<section id="portfolio" class="section">
+		<div class="container" style="margin-top: 10px; margin-bottom:10px;">
+			<h3 class="rad-animation-group rad-fade-down rad-waiting rad-animate" style="animation-delay: 0.1s;">
+			  Performance Art
+			</h3>
+  
+			<div class="row rad-animation-group rad-fade-down rad-waiting rad-animate" style="animation-delay: 0.1s;">
+			  <div class="col-12 col-md-3 mt-4 mt-md-0 my-md-auto">
+				<a href="sweetalchemy.html">
+				<img class="lozad img-responsive {{ cond (eq ( mod $index 4) 0) &quot;img-clip-left-backward&quot; &quot;img-clip-left-forward&quot; }}" src="img/coverphoto/sweetalchemy.jpg" data-src="img/coverphoto/thepills.jpg" data-srcset="img/coverphoto/thepills.jpg" alt="Pills That Look Like Pills" srcset="img/coverphoto/thepills.jpg" data-loaded="true">
+				<h5>Sweet Alchemy</h5>
+				</a>
+			  </div>
+  
+			  <div class="col-12 col-md-3 mt-4 mt-md-0 my-md-auto">
+				<a href="touchinghands.html">
+				<img class="lozad img-responsive {{ cond (eq ( mod $index 4) 0) &quot;img-clip-left-backward&quot; &quot;img-clip-left-forward&quot; }}" src="img/coverphoto/touchinghands.jpg" data-src="img/coverphoto/touchinghands.jpg" data-srcset="img/coverphoto/touchinghands.jpg" alt="Touching Hands" srcset="img/coverphoto/touchinghands.jpg" data-loaded="true">
+				<h5>Touching Hands</h5>
+				</a>
+			</div>
+
+			<div class="col-12 col-md-3 mt-4 mt-md-0 my-md-auto">
+				<a href="iusemyownhandtowrite.html">
+				<img class="lozad img-responsive {{ cond (eq ( mod $index 4) 1)  &quot;img-clip-right-backward&quot; &quot;img-clip-right-forward&quot; }}" src="img/coverphoto/iusemyownhandtowrite.jpg" data-src="img/coverphoto/iusemyownhandtowrite.jpg" data-srcset="img/coverphoto/iusemyownhandtowrite.jpg" alt="I Use my Own Hand to Write" srcset="img/coverphoto/iusemyownhandtowrite.jpg" data-loaded="true">
+			  <h5>I Use My Own Hand to Write</h5>
+			  </a>
+			</div>
+
+			
+			<div class="col-12 col-md-3 mt-4 mt-md-0 my-md-auto">
+				<a href="solution.html">
+				<img class="lozad img-responsive {{ cond (eq ( mod $index 4) 1)  &quot;img-clip-right-backward&quot; &quot;img-clip-right-forward&quot; }}" src="img/coverphoto/solution.jpg" data-src="img/coverphoto/solution.jpg" data-srcset="img/coverphoto/solution.jpg" alt="solution" srcset="img/coverphoto/solution.jpg" data-loaded="true">
+				<h5>解：solution:</h5>
+			  	</a>
+			</div>
+
+				
+			</div>
+		</div>
+	</section>
+
+
+	<section id="portfolio" class="section">
+		<div class="container" style="margin-top: 10px; margin-bottom:10px;">
+			<h3 class="rad-animation-group rad-fade-down rad-waiting rad-animate" style="animation-delay: 0.1s;">
+			  Generative Art
+			</h3>
+  
+			<div class="row rad-animation-group rad-fade-down rad-waiting rad-animate" style="animation-delay: 0.1s;">
+			  <div class="col-12 col-md-3 mt-4 mt-md-0 my-md-auto">
+				<a href="greencircles.html">
+					<img class="lozad img-responsive {{ cond (eq ( mod $index 4) 0) &quot;img-clip-left-backward&quot; &quot;img-clip-left-forward&quot; }}" src="img/GenerativeArt/generativeart1.jpg" data-loaded="true">
+					<h5>解：solution:</h5>
+				</a>
+			</div>
+  
+  
+			<div class="col-12 col-md-3 mt-4 mt-md-0 my-md-auto">
+				<a href="throughnoise.html">
+				  <img class="lozad img-responsive {{ cond (eq ( mod $index 4) 0) &quot;img-clip-left-backward&quot; &quot;img-clip-left-forward&quot; }}" src="img/GenerativeArt/generativeart3.jpg" data-loaded="true">
+				  <h5>解：solution:</h5>
+				</a>
+			</div>
+  
+		</div>
+	</section>
+	  
+	<section id="portfolio" class="section">
+		<div class="container" style="margin-top: 10px; margin-bottom:10px;">
+				<h3 class="rad-animation-group rad-fade-down rad-waiting">
+				  Photography
+				</h3>
+	  
+				<div class="row rad-animation-group rad-fade-down rad-waiting">
+	  
+				  <div class="col-12 col-md-3 mt-4 mt-md-0 my-md-auto">
+					  <img class="lozad img-responsive" src="img/Photography/Chairs/chair2.jpg" data-loaded="true">
+					  <h5>Chairs</h5>
+				  </div>
+				  
+	  
+
+				<div class="col-12 col-md-3 mt-4 mt-md-0 my-md-auto">
+					<img class="lozad img-responsive" src="img/Photography/B&amp;W Photography/2.jpg" data-loaded="true">
+					<h5>B&W Photography</h5>
+				</div>
+
+
+		
 		</div>
 	</section>
 	  
@@ -476,18 +287,15 @@
 						<form action="{{ .Site.Data.homepage.contact.form.action }}" method="{{ .Site.Data.homepage.contact.form.method }}">
 							<div class="row">
 								<div class="col-12 col-sm-6">
-									<input type="text" name="" id="full_name"
-										placeholder="Full Name"/>
+									<input type="text" name="" id="full_name" placeholder="Full Name">
 								</div>
 								<div class="col-12 col-sm-6">
-									<input type="text" name="" id="email"
-										placeholder="Email Address"/>
+									<input type="text" name="" id="email" placeholder="Email Address">
 								</div>
 							</div>
 							<div class="row pt-4">
 								<div class="col-12">
-									<textarea name="" id="message"
-											cols="30" rows="3" placeholder="Type your message here"></textarea>
+									<textarea name="" id="message" cols="30" rows="3" placeholder="Type your message here"></textarea>
 								</div>
 							</div>
 							<div class="row pt-4">
@@ -525,25 +333,24 @@
 		  <div class="footer__links">
 			<ul class="navbar-nav ">
 				<li class="nav-item">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">HOME</a>
-					</li>
-					<li class="nav-item">
-						<a data-scroll class="nav-link" href="about.html">ABOUT</a>
-					</li>
-					<li class="nav-item">
-						<a data-scroll class="nav-link" href="portfolio.html">PORTFOLIO</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="publication.html">PUBLICATION</a>
-					</li>
+					<a class="nav-link" href="index.html">HOME</a>
+				</li>
+				<li class="nav-item">
+					<a data-scroll="" class="nav-link" href="about.html">ABOUT</a>
+				</li>
+				<li class="nav-item">
+					<a data-scroll="" class="nav-link" href="portfolio.html">PORTFOLIO</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="publication.html">PUBLICATION</a>
+				</li>
 			</ul>
 		  </div>
 		</div>
 	</footer>
 	  
-	<script src='js/rad-animations.js'></script>
-	<script src='js/library/lozad.min.js'></script>
+	<script src="js/rad-animations.js"></script>
+	<script src="js/library/lozad.min.js"></script>
 	<script>
 		window.addEventListener("load", function() {
 		  var observer = window.lozad(".lozad", {
@@ -553,11 +360,11 @@
 		  observer.observe();
 		});
 	</script>
-	<script src='js/library/jquery-3.3.1.slim.min.js'></script>
-	<script src='js/library/bootstrap.min.js'></script>
-	<script src='js/sticky-header.js'></script>
-	<script src='js/library/smooth-scroll.polyfills.min.js'></script>
-	<script src='"js/library/fontfaceobserver.js'></script>
+	<script src="js/library/jquery-3.3.1.slim.min.js"></script>
+	<script src="js/library/bootstrap.min.js"></script>
+	<script src="js/sticky-header.js"></script>
+	<script src="js/library/smooth-scroll.polyfills.min.js"></script>
+	<script src="&quot;js/library/fontfaceobserver.js"></script>
 	<script>
 		(function(w) {
 		  // if the class is already set, we're good.
@@ -597,7 +404,7 @@
 		  })
 	</script>
 	  
-</body>
 
-</html>
-<!-- endinject -->
+
+
+<!-- endinject --></body></html>
